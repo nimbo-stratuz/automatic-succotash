@@ -1,4 +1,4 @@
-# Nimbo-Stratuz Bikeshare Wiki
+# [Nimbo-Stratuz Bikeshare Wiki](https://github.com/nimbo-stratuz/bikeshare-wiki/wiki)
 
 
 ## Idejna zasnova storitve
