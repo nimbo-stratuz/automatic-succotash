@@ -1,4 +1,4 @@
-# Bikeshare Wiki
+# Nimbo-Stratuz Bikeshare Wiki
 
 
 ## Idejna zasnova storitve
@@ -27,7 +27,7 @@ Pametne ključavnice so opremljene z GPS oddajniki, polnijo pa se preko baterije
 1. Katalog razpoložljivih koles (pregled vseh koles, ki so v aplikaciji)
 2. Izposoja kolesa, vrnitev (zaklenitev) kolesa.
 3. Plačila
-4. Obveščanje o najbližjem prostem kolesu, najcenejšem prostem kolesu, ... (kliče mikrostoritev 1.)
+4. Obveščanje o najbližjem prostem kolesu, najcenejšem prostem kolesu, ... (kliče mikrostoritev 7.)
 5. Kje se nahaja moje kolo (lokacija kolesa, mikrostoritev dostopna samo oddajalcu kolesa)
 6. Oddaja ocene kolesa in zahtevka za popravila.
 7. Prosta kolesa v moji bližini.
