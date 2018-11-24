@@ -1,0 +1,185 @@
+{
+	"_type": "export",
+	"__export_format": 3,
+	"__export_date": "2018-11-24T11:58:30.464Z",
+	"__export_source": "insomnia.desktop.app:v6.2.0",
+	"resources": [
+		{
+			"_id": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"created": 1540913722736,
+			"description": "",
+			"modified": 1540913741272,
+			"name": "bikeshare",
+			"parentId": null,
+			"_type": "workspace"
+		},
+		{
+			"_id": "env_4757017849cc48cbba0e48bd37568371",
+			"color": null,
+			"created": 1540913722758,
+			"data": {},
+			"isPrivate": false,
+			"metaSortKey": 1540913722758,
+			"modified": 1543060378416,
+			"name": "New Environment",
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"_type": "environment"
+		},
+		{
+			"_id": "jar_6671bed8def344a7853c634abef7df3f",
+			"cookies": [],
+			"created": 1540913722760,
+			"modified": 1540913722760,
+			"name": "Default Jar",
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"_type": "cookie_jar"
+		},
+		{
+			"_id": "req_78a168e84e6442e4921268bdd59bd069",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"ownerId\": 1,\n\t\"smartLockUUID\": \"nov123678\"\n}"
+			},
+			"created": 1540913757771,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6084b47cd7474bfbaf7c3cc07847044c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1540913757771,
+			"method": "POST",
+			"modified": 1543060500419,
+			"name": "create bicycle",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": " {{ base_url  }}/v1/bicycles",
+			"_type": "request"
+		},
+		{
+			"_id": "req_553b4a54697049aeba855a4b069b5202",
+			"authentication": {},
+			"body": {},
+			"created": 1540916999282,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1540916999282,
+			"method": "GET",
+			"modified": 1543060610864,
+			"name": "GET bicycles",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": " {{ base_url  }}/v1/bicycles",
+			"_type": "request"
+		},
+		{
+			"_id": "req_2d5c446a517447a1be3d8c6802cfb15b",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"healthy\": false\n}"
+			},
+			"created": 1543051722068,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_aa6a55ec63f04d998f609bec1c72be29",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543051722068,
+			"method": "POST",
+			"modified": 1543060543375,
+			"name": "set healthy: false",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": " {{ base_url  }}/v1/demo/healthy",
+			"_type": "request"
+		},
+		{
+			"_id": "req_9f916a3e88e3493282565d0560c129f9",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"n\": 1\n}"
+			},
+			"created": 1543058769727,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_aa6a55ec63f04d998f609bec1c72be29",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1541984360675,
+			"method": "POST",
+			"modified": 1543060542900,
+			"name": "set load: 50",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": " {{ base_url  }}/v1/demo/load",
+			"_type": "request"
+		},
+		{
+			"_id": "env_a0b8a948d9e242e3b2ff2dadc2385926",
+			"color": "#7d69cb",
+			"created": 1543060379341,
+			"data": {
+				"base_url": "http://159.122.186.143:31337"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1543060379341,
+			"modified": 1543060527754,
+			"name": "bikeshare-ibmcloud",
+			"parentId": "env_4757017849cc48cbba0e48bd37568371",
+			"_type": "environment"
+		},
+		{
+			"_id": "env_314612e119e4485d9e72c4223ebb8b97",
+			"color": "#69bbcb",
+			"created": 1543060520782,
+			"data": {
+				"base_url": "http://localhost:8080"
+			},
+			"isPrivate": false,
+			"metaSortKey": 1543060520782,
+			"modified": 1543060573403,
+			"name": "bikeshare-localhost",
+			"parentId": "env_4757017849cc48cbba0e48bd37568371",
+			"_type": "environment"
+		}
+	]
+}
