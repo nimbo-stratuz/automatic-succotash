@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-11-24T19:48:12.886Z",
+	"__export_date": "2018-11-25T12:21:43.223Z",
 	"__export_source": "insomnia.desktop.app:v6.2.0",
 	"resources": [
 		{
@@ -39,7 +39,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"ownerId\": 1,\n\t\"smartLockUUID\": \"nov123678\"\n}"
+				"text": "{\n\t\"ownerId\": 1,\n\t\"smartLockUUID\": \"{% uuid 'v4' %}\"\n}"
 			},
 			"created": 1540913757771,
 			"description": "",
@@ -53,7 +53,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757771,
 			"method": "POST",
-			"modified": 1543088199541,
+			"modified": 1543148456317,
 			"name": "create bicycle",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -76,7 +76,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540916999282,
 			"method": "GET",
-			"modified": 1543088266916,
+			"modified": 1543148486933,
 			"name": "GET bicycles",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -108,7 +108,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543051722068,
 			"method": "POST",
-			"modified": 1543088261832,
+			"modified": 1543088941287,
 			"name": "set healthy: false",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -118,7 +118,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": " {{ base_url.catalogue }}/v1/demo/healthy",
+			"url": " {{ base_url.catalogue }}/v1/demo/load",
 			"_type": "request"
 		},
 		{
@@ -140,7 +140,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541984360675,
 			"method": "POST",
-			"modified": 1543088195308,
+			"modified": 1543088941021,
 			"name": "set load: 50",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -163,7 +163,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543082259215,
 			"method": "GET",
-			"modified": 1543088371184,
+			"modified": 1543142990581,
 			"name": "rental get rentals filter",
 			"parameters": [
 				{
@@ -207,7 +207,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541450679978.5,
 			"method": "GET",
-			"modified": 1543088184975,
+			"modified": 1543148393954,
 			"name": "instanceid",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -218,6 +218,93 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": " {{ base_url.catalogue  }}/v1/demo/instanceid",
+			"_type": "request"
+		},
+		{
+			"_id": "req_02255e966ec347e194973025fabbb1ed",
+			"authentication": {},
+			"body": {},
+			"created": 1543148312001,
+			"description": "",
+			"headers": [],
+			"isPrivate": false,
+			"metaSortKey": -1540915378526.5,
+			"method": "GET",
+			"modified": 1543148459629,
+			"name": "GET bicycles/2",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": " {{ base_url.catalogue }}/v1/bicycles/2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_ad055a83e3dc44ba9d316e8cb088f606",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"available\": false,\n\t\"dateAdded\": \"2018-11-25T12:16:19.428857Z\",\n\t\"ownerId\": 1,\n\t\"smartLockUUID\": \"{% uuid 'v4' %}\"\n}"
+			},
+			"created": 1543148409966,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6084b47cd7474bfbaf7c3cc07847044c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1540913757721,
+			"method": "PUT",
+			"modified": 1543148463643,
+			"name": "update bicycle",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": " {{ base_url.catalogue }}/v1/bicycles/2",
+			"_type": "request"
+		},
+		{
+			"_id": "req_7b016aefb7d54f8f9b8dc49cc45f3df7",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": ""
+			},
+			"created": 1543148464023,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_6084b47cd7474bfbaf7c3cc07847044c",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1540913757671,
+			"method": "DELETE",
+			"modified": 1543148484732,
+			"name": "update bicycle (Copy)",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": " {{ base_url.catalogue }}/v1/bicycles/6",
 			"_type": "request"
 		},
 		{
