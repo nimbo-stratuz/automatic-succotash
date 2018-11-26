@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-11-25T12:21:43.223Z",
+	"__export_date": "2018-11-26T12:52:03.158Z",
 	"__export_source": "insomnia.desktop.app:v6.2.0",
 	"resources": [
 		{
@@ -53,7 +53,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757771,
 			"method": "POST",
-			"modified": 1543148456317,
+			"modified": 1543233620565,
 			"name": "create bicycle",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -76,7 +76,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540916999282,
 			"method": "GET",
-			"modified": 1543148486933,
+			"modified": 1543233618929,
 			"name": "GET bicycles",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -86,7 +86,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": " {{ base_url.catalogue }}/v1/bicycles",
+			"url": " {{ base_url.catalogue }}/v1/bicycles/2",
 			"_type": "request"
 		},
 		{
@@ -140,7 +140,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541984360675,
 			"method": "POST",
-			"modified": 1543088941021,
+			"modified": 1543226008072,
 			"name": "set load: 50",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -163,21 +163,9 @@
 			"isPrivate": false,
 			"metaSortKey": -1543082259215,
 			"method": "GET",
-			"modified": 1543142990581,
+			"modified": 1543234061035,
 			"name": "rental get rentals filter",
-			"parameters": [
-				{
-					"disabled": true,
-					"id": "pair_15ec8e0221d14a92a07ee303fcec2f65",
-					"name": "filter",
-					"value": "bicycleId:EQ:2"
-				},
-				{
-					"id": "pair_d71fdc3cea6b48cf9be303d6faf13e1d",
-					"name": "order",
-					"value": "rentEnd DESC"
-				}
-			],
+			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
 			"settingDisableRenderRequestBody": false,
 			"settingEncodeUrl": true,
@@ -185,7 +173,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": "{{ base_url.rental }}/v1/rentals",
+			"url": "{{ base_url.rental }}/v1/rentals/1",
 			"_type": "request"
 		},
 		{
@@ -207,7 +195,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541450679978.5,
 			"method": "GET",
-			"modified": 1543148393954,
+			"modified": 1543189276892,
 			"name": "instanceid",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -230,7 +218,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540915378526.5,
 			"method": "GET",
-			"modified": 1543148459629,
+			"modified": 1543233612963,
 			"name": "GET bicycles/2",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -262,7 +250,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757721,
 			"method": "PUT",
-			"modified": 1543148463643,
+			"modified": 1543189271227,
 			"name": "update bicycle",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -294,7 +282,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757671,
 			"method": "DELETE",
-			"modified": 1543148484732,
+			"modified": 1543189267445,
 			"name": "update bicycle (Copy)",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -305,6 +293,122 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": " {{ base_url.catalogue }}/v1/bicycles/6",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d676d8d5d232456cb0b720330f71bd68",
+			"authentication": {},
+			"body": {},
+			"created": 1543230120431,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_9878a31559914a47b2c0779171f11f3f",
+					"name": "Accept",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543230120431,
+			"method": "GET",
+			"modified": 1543235837770,
+			"name": "catalogue metrics",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url.catalogue  }}/metrics",
+			"_type": "request"
+		},
+		{
+			"_id": "req_d608964ea9c149009e766d78af9783e6",
+			"authentication": {},
+			"body": {},
+			"created": 1543234071746,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_9878a31559914a47b2c0779171f11f3f",
+					"name": "Accept",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543156189823,
+			"method": "GET",
+			"modified": 1543234137393,
+			"name": "rental metrics",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url.rental }}/metrics",
+			"_type": "request"
+		},
+		{
+			"_id": "req_01e83e343ad84be9926001bcf3476236",
+			"authentication": {},
+			"body": {},
+			"created": 1543234087966,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_9878a31559914a47b2c0779171f11f3f",
+					"name": "Accept",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543193155127,
+			"method": "GET",
+			"modified": 1543236562020,
+			"name": "catalogue health",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url.catalogue  }}/health",
+			"_type": "request"
+		},
+		{
+			"_id": "req_3054673123404aaeba88aef8d39fcab5",
+			"authentication": {},
+			"body": {},
+			"created": 1543234093568,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_9878a31559914a47b2c0779171f11f3f",
+					"name": "Accept",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1543174672475,
+			"method": "GET",
+			"modified": 1543236567153,
+			"name": "rental health",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url.rental }}/health",
 			"_type": "request"
 		},
 		{
