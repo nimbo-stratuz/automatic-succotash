@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-11-27T10:22:57.606Z",
+	"__export_date": "2018-11-27T13:23:12.769Z",
 	"__export_source": "insomnia.desktop.app:v6.2.0",
 	"resources": [
 		{
@@ -39,7 +39,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"ownerId\": 1,\n\t\"smartLockUUID\": \"{% uuid 'v4' %}\"\n}"
+				"text": "{\n\t\"ownerId\": 1,\n\t\"smartLockUUID\": \"{% uuid 'v4' %}\",\n\t\"location\": {\n\t\t\"latitude\": 1.0,\n\t\t\"longitude\": 1.2\n\t}\n}"
 			},
 			"created": 1540913757771,
 			"description": "",
@@ -51,9 +51,9 @@
 				}
 			],
 			"isPrivate": false,
-			"metaSortKey": -1540913757771,
+			"metaSortKey": -1540914162959.875,
 			"method": "POST",
-			"modified": 1543238505442,
+			"modified": 1543319508689,
 			"name": "create bicycle",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -76,7 +76,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540916999282,
 			"method": "GET",
-			"modified": 1543301305076,
+			"modified": 1543324969540,
 			"name": "GET bicycles",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -108,7 +108,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543051722068,
 			"method": "POST",
-			"modified": 1543314091541,
+			"modified": 1543316714342,
 			"name": "set healthy: false",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -201,7 +201,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541450679978.5,
 			"method": "GET",
-			"modified": 1543238508629,
+			"modified": 1543316860557,
 			"name": "instanceid",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -224,7 +224,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540915378526.5,
 			"method": "GET",
-			"modified": 1543302523582,
+			"modified": 1543324970808,
 			"name": "GET bicycles/2",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -242,7 +242,7 @@
 			"authentication": {},
 			"body": {
 				"mimeType": "application/json",
-				"text": "{\n\t\"available\": false,\n\t\"dateAdded\": \"2018-11-25T12:16:19.428857Z\",\n\t\"ownerId\": 1,\n\t\"smartLockUUID\": \"{% uuid 'v4' %}\"\n}"
+				"text": "{\n\t\"available\": false,\n\t\"dateAdded\": \"2018-11-25T12:16:19.428857Z\",\n\t\"ownerId\": 1,\n\t\"smartLockUUID\": \"popravlje1231232n\",\n\t\"location\": {\n\t\t\"latitude\": 0.2,\n\t\t\"longitude\": 1.1\n\t}\n}"
 			},
 			"created": 1543148409966,
 			"description": "",
@@ -256,7 +256,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757721,
 			"method": "PUT",
-			"modified": 1543238502010,
+			"modified": 1543319514601,
 			"name": "update bicycle",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -317,7 +317,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543183913801,
 			"method": "GET",
-			"modified": 1543238555226,
+			"modified": 1543315936489,
 			"name": "catalogue metrics",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -375,7 +375,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543193155127,
 			"method": "GET",
-			"modified": 1543301291643,
+			"modified": 1543314722311,
 			"name": "catalogue health",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -404,7 +404,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543174672475,
 			"method": "GET",
-			"modified": 1543238557354,
+			"modified": 1543314916130,
 			"name": "rental health",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
