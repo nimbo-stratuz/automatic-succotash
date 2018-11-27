@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-11-26T13:24:53.100Z",
+	"__export_date": "2018-11-27T10:22:57.606Z",
 	"__export_source": "insomnia.desktop.app:v6.2.0",
 	"resources": [
 		{
@@ -76,7 +76,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540916999282,
 			"method": "GET",
-			"modified": 1543238507619,
+			"modified": 1543301305076,
 			"name": "GET bicycles",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -108,7 +108,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543051722068,
 			"method": "POST",
-			"modified": 1543238512403,
+			"modified": 1543314091541,
 			"name": "set healthy: false",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -118,7 +118,7 @@
 			"settingRebuildPath": true,
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
-			"url": " {{ base_url.catalogue }}/v1/demo/load",
+			"url": " {{ base_url.catalogue }}/v1/demo/healthy",
 			"_type": "request"
 		},
 		{
@@ -161,10 +161,10 @@
 			"description": "",
 			"headers": [],
 			"isPrivate": false,
-			"metaSortKey": -1543082259215,
+			"metaSortKey": -1540913757621,
 			"method": "GET",
-			"modified": 1543238559302,
-			"name": "rental get rentals filter",
+			"modified": 1543302638577,
+			"name": "get rentals",
 			"parameters": [
 				{
 					"id": "pair_9f346f72f66a473cabea8e3429afa95b",
@@ -224,7 +224,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540915378526.5,
 			"method": "GET",
-			"modified": 1543238506445,
+			"modified": 1543302523582,
 			"name": "GET bicycles/2",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -375,7 +375,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543193155127,
 			"method": "GET",
-			"modified": 1543238515401,
+			"modified": 1543301291643,
 			"name": "catalogue health",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -415,6 +415,38 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": "{{ base_url.rental }}/health",
+			"_type": "request"
+		},
+		{
+			"_id": "req_8e063ae114ae4a2ebf3be6bfcc509f96",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"userId\": 1,\n\t\"bicycleId\": 2\n}\t\n"
+			},
+			"created": 1543301581302,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_44cb879c7fef432b95cf69b33d55dec8",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1540913757571,
+			"method": "POST",
+			"modified": 1543314066156,
+			"name": "rent a bicycle",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url.rental  }}/v1/rentals/rent",
 			"_type": "request"
 		},
 		{
