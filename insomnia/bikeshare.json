@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-12-11T15:56:35.327Z",
+	"__export_date": "2018-12-15T16:28:32.525Z",
 	"__export_source": "insomnia.desktop.app:v6.2.3",
 	"resources": [
 		{
@@ -37,7 +37,7 @@
 					],
 					"hostOnly": true,
 					"httpOnly": true,
-					"id": "062073599953799574",
+					"id": "6391247104231059",
 					"key": "KC_RESTART",
 					"lastAccessed": "2018-11-30T14:56:47.914Z",
 					"maxAge": 0,
@@ -52,7 +52,7 @@
 					],
 					"hostOnly": true,
 					"httpOnly": true,
-					"id": "6649209694003604",
+					"id": "7798266040681441",
 					"key": "KC_RESTART",
 					"lastAccessed": "2018-12-09T14:07:47.922Z",
 					"maxAge": 0,
@@ -67,15 +67,27 @@
 					],
 					"hostOnly": true,
 					"httpOnly": true,
-					"id": "05094367988456261",
+					"id": "9175938087213138",
 					"key": "KC_RESTART",
 					"lastAccessed": "2018-12-11T15:56:18.805Z",
 					"maxAge": 0,
 					"path": "/auth/realms/bikeshare/"
+				},
+				{
+					"creation": "2018-12-15T14:00:31.130Z",
+					"domain": "www.mapquestapi.com",
+					"hostOnly": true,
+					"httpOnly": true,
+					"id": "39278230276933335",
+					"key": "JSESSIONID",
+					"lastAccessed": "2018-12-15T14:01:00.340Z",
+					"path": "/directions/",
+					"secure": true,
+					"value": "4067B10C6404F0203729E6BC330A3322"
 				}
 			],
 			"created": 1540913722760,
-			"modified": 1544543778805,
+			"modified": 1544882460341,
 			"name": "Default Jar",
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
 			"_type": "cookie_jar"
@@ -137,7 +149,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540916999282,
 			"method": "GET",
-			"modified": 1544543780145,
+			"modified": 1544891283878,
 			"name": "GET bicycles",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -169,7 +181,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541850940500.875,
 			"method": "POST",
-			"modified": 1544364013664,
+			"modified": 1544891290840,
 			"name": "set healthy: false",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -201,7 +213,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541984360675,
 			"method": "POST",
-			"modified": 1544364014159,
+			"modified": 1544891292226,
 			"name": "set load: 50",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -228,7 +240,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541717520326.75,
 			"method": "GET",
-			"modified": 1544543773693,
+			"modified": 1544882038253,
 			"name": "GET rentals",
 			"parameters": [
 				{
@@ -266,7 +278,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541784230413.8125,
 			"method": "GET",
-			"modified": 1544439921576,
+			"modified": 1544891288315,
 			"name": "instanceid",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -293,7 +305,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540915378526.5,
 			"method": "GET",
-			"modified": 1544543783534,
+			"modified": 1544872907104,
 			"name": "GET bicycles/{id}",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -329,7 +341,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757721,
 			"method": "PUT",
-			"modified": 1544542111429,
+			"modified": 1544891282615,
 			"name": "update bicycle",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -365,7 +377,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757671,
 			"method": "DELETE",
-			"modified": 1544364009697,
+			"modified": 1544891279731,
 			"name": "delete bicycle",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -423,7 +435,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543156189823,
 			"method": "GET",
-			"modified": 1544364014901,
+			"modified": 1544889279477,
 			"name": "rental metrics",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -481,7 +493,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543174672475,
 			"method": "GET",
-			"modified": 1544367826803,
+			"modified": 1544889281677,
 			"name": "rental health",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -534,7 +546,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1543571644748,
 			"method": "POST",
-			"modified": 1544543776190,
+			"modified": 1544891258010,
 			"name": "get token",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -685,7 +697,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541317259804.375,
 			"method": "GET",
-			"modified": 1544543677466,
+			"modified": 1544882048540,
 			"name": "GET rentals/{id}",
 			"parameters": [
 				{
@@ -705,6 +717,67 @@
 			"_type": "request"
 		},
 		{
+			"_id": "req_09a05a85a44c4f6181755b0d1fafab82",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"from\": \"Ljubljana, Faculty of Computer and Information Science\",\n\t\"to\": \"Medvode\"\n}"
+			},
+			"created": 1544872915711,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b76dfdf461044dd1a1f90134e6eed476",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1540913757621,
+			"method": "POST",
+			"modified": 1544891277019,
+			"name": "POST directions",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url.directions  }}/v1/directions",
+			"_type": "request"
+		},
+		{
+			"_id": "req_001ccc0ff1f544ff9156f9ae203dd44a",
+			"authentication": {},
+			"body": {},
+			"created": 1544889282154,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_9878a31559914a47b2c0779171f11f3f",
+					"name": "Accept",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1542570275249,
+			"method": "GET",
+			"modified": 1544891293736,
+			"name": "directions health",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url.directions }}/health",
+			"_type": "request"
+		},
+		{
 			"_id": "env_a0b8a948d9e242e3b2ff2dadc2385926",
 			"color": "#7d69cb",
 			"created": 1543060379341,
@@ -712,13 +785,14 @@
 				"auth_token": "{% response 'body', 'req_052638254c2e461c9491d81d3b5affef', '$.access_token' %}",
 				"base_url": {
 					"catalogue": "http://159.122.186.143:31337",
+					"directions": "http://159.122.186.143:31338",
 					"keycloak": "http://159.122.186.143:31007",
 					"rental": "http://159.122.186.143:30420"
 				}
 			},
 			"isPrivate": false,
 			"metaSortKey": 1543060379341,
-			"modified": 1544543753674,
+			"modified": 1544887654316,
 			"name": "bikeshare-ibmcloud",
 			"parentId": "env_4757017849cc48cbba0e48bd37568371",
 			"_type": "environment"
@@ -731,13 +805,14 @@
 				"auth_token": "{% response 'body', 'req_052638254c2e461c9491d81d3b5affef', '$.access_token' %}",
 				"base_url": {
 					"catalogue": "http://localhost:8080",
+					"directions": "http://localhost:8088",
 					"keycloak": "http://159.122.186.143:31007",
 					"rental": "http://localhost:8081"
 				}
 			},
 			"isPrivate": false,
 			"metaSortKey": 1543060520782,
-			"modified": 1544543742247,
+			"modified": 1544887655333,
 			"name": "bikeshare-localhost",
 			"parentId": "env_4757017849cc48cbba0e48bd37568371",
 			"_type": "environment"
