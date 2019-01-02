@@ -1,8 +1,8 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2018-12-15T16:28:32.525Z",
-	"__export_source": "insomnia.desktop.app:v6.2.3",
+	"__export_date": "2019-01-02T22:33:00.235Z",
+	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
 			"_id": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -697,7 +697,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1541317259804.375,
 			"method": "GET",
-			"modified": 1544882048540,
+			"modified": 1546468247622,
 			"name": "GET rentals/{id}",
 			"parameters": [
 				{
@@ -735,7 +735,7 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757621,
 			"method": "POST",
-			"modified": 1544891277019,
+			"modified": 1546092167511,
 			"name": "POST directions",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
@@ -784,15 +784,15 @@
 			"data": {
 				"auth_token": "{% response 'body', 'req_052638254c2e461c9491d81d3b5affef', '$.access_token' %}",
 				"base_url": {
-					"catalogue": "http://159.122.186.143:31337",
-					"directions": "http://159.122.186.143:31338",
-					"keycloak": "http://159.122.186.143:31007",
-					"rental": "http://159.122.186.143:30420"
+					"catalogue": "http://159.122.186.200:31337",
+					"directions": "http://159.122.186.200:31338",
+					"keycloak": "http://159.122.186.200:31007",
+					"rental": "http://159.122.186.200:30420"
 				}
 			},
 			"isPrivate": false,
 			"metaSortKey": 1543060379341,
-			"modified": 1544887654316,
+			"modified": 1546468215998,
 			"name": "bikeshare-ibmcloud",
 			"parentId": "env_4757017849cc48cbba0e48bd37568371",
 			"_type": "environment"
@@ -806,13 +806,13 @@
 				"base_url": {
 					"catalogue": "http://localhost:8080",
 					"directions": "http://localhost:8088",
-					"keycloak": "http://159.122.186.143:31007",
+					"keycloak": "http://159.122.186.200:31007",
 					"rental": "http://localhost:8081"
 				}
 			},
 			"isPrivate": false,
 			"metaSortKey": 1543060520782,
-			"modified": 1544887655333,
+			"modified": 1546468358404,
 			"name": "bikeshare-localhost",
 			"parentId": "env_4757017849cc48cbba0e48bd37568371",
 			"_type": "environment"
