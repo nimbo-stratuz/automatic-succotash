@@ -8,10 +8,9 @@
    uporabnik "userId" si izposodi kolo "bicycleId". 
 
    ```json
-   {
-
-    "userId" : "1",
-    "bicycleId" : "2"
+  {
+     "userId" : "1",
+     "bicycleId" : "2"
   }
    ```
 ---
@@ -20,10 +19,9 @@
    vrne izposojeno kolo na ciljni lokaciji. Parameter znotraj URL naslova je ID dotične izposoje.
 
    ```json
-   {
-
-    "userId" : "1",
-    "bicycleId" : "2"
+  {
+     "userId" : "1",
+     "bicycleId" : "2"
   }
    ```
 ---
