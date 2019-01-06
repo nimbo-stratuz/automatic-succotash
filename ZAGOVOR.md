@@ -4,19 +4,27 @@
    pridobi podatke o kolesu in zadnjih `n-rentals-included` izposoj tega kolesa.
 ---
 
-2. `POST rental/v1/rentals`
-   izposodi kolo
+2. `POST rental/v1/rentals/rent`
+   uporabnik "userId" si izposodi kolo "bicycleId". 
 
    ```json
-   {}
+   {
+
+    "userId" : "1",
+    "bicycleId" : "2"
+  }
    ```
 ---
 
-3. `POST rental/v1/rentals`
-   vrne izposojeno kolo na ciljni lokaciji
+3. `POST rental/v1/rentals/{rentalId}/finalize`
+   vrne izposojeno kolo na ciljni lokaciji. Parameter znotraj URL naslova je ID dotične izposoje.
 
    ```json
-   {}
+   {
+
+    "userId" : "1",
+    "bicycleId" : "2"
+  }
    ```
 ---
 
