@@ -1,7 +1,7 @@
 {
 	"_type": "export",
 	"__export_format": 3,
-	"__export_date": "2019-01-06T12:53:32.135Z",
+	"__export_date": "2019-01-06T13:02:09.151Z",
 	"__export_source": "insomnia.desktop.app:v6.3.2",
 	"resources": [
 		{
@@ -750,8 +750,8 @@
 			"isPrivate": false,
 			"metaSortKey": -1540913757621,
 			"method": "POST",
-			"modified": 1546778672160,
-			"name": "POST directions",
+			"modified": 1546779354804,
+			"name": "POST directions LJ-M",
 			"parameters": [],
 			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
 			"settingDisableRenderRequestBody": false,
@@ -914,6 +914,38 @@
 			"settingSendCookies": true,
 			"settingStoreCookies": true,
 			"url": " {{ base_url.catalogue }}/v1/bicycles",
+			"_type": "request"
+		},
+		{
+			"_id": "req_372c05f3a6f7428abd92955cbdf19e6c",
+			"authentication": {},
+			"body": {
+				"mimeType": "application/json",
+				"text": "{\n\t\"from\": \"Medvode\",\n\t\"to\": \"Ljubljana, Faculty of Computer and Information Science\"\n}"
+			},
+			"created": 1546779342533,
+			"description": "",
+			"headers": [
+				{
+					"id": "pair_b76dfdf461044dd1a1f90134e6eed476",
+					"name": "Content-Type",
+					"value": "application/json"
+				}
+			],
+			"isPrivate": false,
+			"metaSortKey": -1540913757608.5,
+			"method": "POST",
+			"modified": 1546779371144,
+			"name": "POST directions M-LJ",
+			"parameters": [],
+			"parentId": "wrk_c98798e4af07425cb180cf8a41b47061",
+			"settingDisableRenderRequestBody": false,
+			"settingEncodeUrl": true,
+			"settingMaxTimelineDataSize": 1000,
+			"settingRebuildPath": true,
+			"settingSendCookies": true,
+			"settingStoreCookies": true,
+			"url": "{{ base_url.directions  }}/v1/directions",
 			"_type": "request"
 		},
 		{
