@@ -28,7 +28,7 @@
    ```
 
 5. `METHOD url`
-   TODO
+   TODO, najbrž nekaj z ratings
 
    ```json
    {}
