@@ -1,7 +1,7 @@
 ## Zahtevki
 
 1. `GET catalogue/v1/bicycles/{id}`
-   pridobi podatke o kolesu in zadnih `n-rentals-included` izposoj tega kolesa.
+   pridobi podatke o kolesu in zadnjih `n-rentals-included` izposoj tega kolesa.
 
 2. `POST rental/v1/rentals`
    izposodi kolo
