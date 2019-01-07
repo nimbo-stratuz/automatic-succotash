@@ -8,10 +8,10 @@
    uporabnik "userId" si izposodi kolo "bicycleId". 
 
    ```json
-  {
-     "userId" : "1",
-     "bicycleId" : "2"
-  }
+   {
+      "userId" : "1",
+      "bicycleId" : "2"
+   }
    ```
 ---
 
@@ -19,10 +19,10 @@
    vrne izposojeno kolo na ciljni lokaciji. Parameter znotraj URL naslova je ID dotične izposoje.
 
    ```json
-  {
-     "userId" : "1",
-     "bicycleId" : "2"
-  }
+   {
+      "userId" : "1",
+      "bicycleId" : "2"
+   }
    ```
 ---
 
@@ -37,9 +37,13 @@
    ```
 ---
 
-5. `METHOD url`
-   TODO, najbrž nekaj z ratings
+5. `POST ratings/v1/ratings`
+   uporabnik poda kolesu oceno. V primeru da je ocena visoka, se lastniku kolesa izplaca bonus.
 
    ```json
-   {}
+   {
+      "userId" : "1",
+      "bicycleId" : "1",
+      "rating"	: "5"  
+   }
    ```
