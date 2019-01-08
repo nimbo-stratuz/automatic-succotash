@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export KUBECONFIG=$HOME/.bluemix/plugins/container-service/clusters/bikeshare/kube-config-mil01-bikeshare.yml
+
+kubectl exec $(kubectl get pods | grep etcd | awk '{print $1;}') etcdctl -- $@
